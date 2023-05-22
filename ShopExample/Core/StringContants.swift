@@ -14,4 +14,5 @@ struct StringConstants {
     static let favoritesTitleBar = NSLocalizedString("Favorites", comment: "Favorites title on TabBar")
     static let myAccountTitleBar = NSLocalizedString("My account", comment: "My account title on TabBar")
     static let categoriesTitle = NSLocalizedString("Categories", comment: "Title main categories screen")
+    static let addToCart = NSLocalizedString("Add to cart", comment: "Label for add to cart button")
 }

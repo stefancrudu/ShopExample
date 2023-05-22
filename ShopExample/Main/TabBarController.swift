@@ -13,22 +13,13 @@ protocol TabBarProtocol: UIViewController {
 }
 
 final class TabBarController: UITabBarController {
-    private var screens: [UIViewController] = [
+    private var screens: [TabBarProtocol] = [
         HomeView(),
         CategoriesViewController(),
         CartView(),
         FavoriteView(),
         MyAccountView()
     ]
-    
-    private var createNavControllerFromScreens: [UIViewController]? {
-        screens.map { screen in
-            guard let screen = screen as? TabBarProtocol else {
-                fatalError("One or more screens are not implementing TabBarProtocol")
-            }
-            return createNavController(for: screen)
-        }
-    }
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +35,7 @@ final class TabBarController: UITabBarController {
 
 private extension TabBarController {
     func configureTabBar() {
-        viewControllers = createNavControllerFromScreens
+        viewControllers = screens.map(createNavController)
         tabBar.backgroundColor = UIConstants.tabBarBackgorundColor
         tabBar.tintColor = UIConstants.tabBarTintColor
     }
