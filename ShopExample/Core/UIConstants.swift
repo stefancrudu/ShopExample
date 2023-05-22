@@ -11,11 +11,9 @@ struct UIConstants {
     static let tabBarBackgorundColor: UIColor = .systemBackground
     static let tabBarTintColor: UIColor = .label
     
-    static let homeIconTabBar: UIImage = UIImage(systemName: "house.fill")!
-    static let productsIconTabBar: UIImage = UIImage(systemName: "list.bullet")!
-    static let cartIconTabBar: UIImage = UIImage(systemName: "cart")!
-    static let favoritesIconTabBar: UIImage = UIImage(systemName: "star.fill")!
-    static let myAccountIconTabBar: UIImage = UIImage(systemName: "person.fill")!
-    
-    
+    static let homeIconTabBarString: String = "house.fill"
+    static let categoriesIconTabBarString: String = "list.bullet"
+    static let cartIconTabBarString: String = "cart"
+    static let favoritesIconTabBarString: String = "star.fill"
+    static let myAccountIconTabBarString: String = "person.fill"
 }

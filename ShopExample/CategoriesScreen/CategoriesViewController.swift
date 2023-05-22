@@ -11,8 +11,8 @@ class CategoriesViewController: UICollectionViewController, TabBarProtocol {
     typealias DataSource = UICollectionViewDiffableDataSource<Int, String>
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, String>
     
-    var titleTabBar: String = StringConstants.productsTitleBar
-    var iconTabBar: UIImage = UIConstants.productsIconTabBar
+    var titleTabBar: String = TabBarString.categoriesTitleBar.localized
+    var iconTabBar: UIImage =  UIImage(systemName: UIConstants.categoriesIconTabBarString)!
     
     private lazy var dataSource: DataSource! = {
         let cellRegistration = UICollectionView.CellRegistration(handler: cellRegistrationHandler)
@@ -37,7 +37,7 @@ class CategoriesViewController: UICollectionViewController, TabBarProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = StringConstants.categoriesTitle
+        title = CategoriesString.title.localized
         
         if (categoriesList.isEmpty) {
             setCategoriesList(priority: .high)

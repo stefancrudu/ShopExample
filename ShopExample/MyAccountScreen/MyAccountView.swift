@@ -8,8 +8,8 @@
 import UIKit
 
 class MyAccountView: UIViewController, TabBarProtocol {
-    var titleTabBar: String = StringConstants.myAccountTitleBar
-    var iconTabBar: UIImage = UIConstants.myAccountIconTabBar
+    var titleTabBar: String = TabBarString.myAccountTitleBar.localized
+    var iconTabBar: UIImage = UIImage(systemName: UIConstants.myAccountIconTabBarString)!
     
     override func viewDidLoad() {
         title = titleTabBar
