@@ -8,8 +8,8 @@
 import UIKit
 
 class CategoriesViewController: UICollectionViewController, TabBarProtocol {
-    typealias DataSource = UICollectionViewDiffableDataSource<Int, String>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<Int, String>
+    private typealias DataSource = UICollectionViewDiffableDataSource<Int, String>
+    private typealias Snapshot = NSDiffableDataSourceSnapshot<Int, String>
     
     var titleTabBar: String = StringConstants.productsTitleBar
     var iconTabBar: UIImage = UIConstants.productsIconTabBar
@@ -103,7 +103,7 @@ private extension CategoriesViewController {
 
 private extension CategoriesViewController {
     func pushProductsList(for category:String) {
-        let viewController = ProductsListView(category: category)
+        let viewController = ProductsListViewController(category: category)
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
