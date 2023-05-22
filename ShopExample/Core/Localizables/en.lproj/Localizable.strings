@@ -1,0 +1,13 @@
+//
+//  TabBarString.strings
+//  ShopExample
+//
+//  Created by Stefan Crudu on 22.05.2023.
+//
+
+"TabBarString_homeTitleBar" = "Home";
+"TabBarString_categoriesTitleBar" = "Categories";
+"TabBarString_cartTitleBar" = "Cart";
+"TabBarString_favoritesTitleBar" = "Favorites";
+"TabBarString_myAccountTitleBar" = "My account";
+"CategoriesString_title" = "Categories";

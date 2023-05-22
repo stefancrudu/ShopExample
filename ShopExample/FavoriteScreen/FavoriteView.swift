@@ -8,8 +8,8 @@
 import UIKit
 
 class FavoriteView: UIViewController, TabBarProtocol {
-    var titleTabBar: String = StringConstants.favoritesTitleBar
-    var iconTabBar: UIImage = UIConstants.favoritesIconTabBar
+    var titleTabBar: String = TabBarString.favoritesTitleBar.localized
+    var iconTabBar: UIImage = UIImage(systemName: UIConstants.favoritesIconTabBarString)!
     
     override func viewDidLoad() {
         title = titleTabBar

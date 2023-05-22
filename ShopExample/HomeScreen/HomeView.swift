@@ -8,8 +8,8 @@
 import UIKit
 
 class HomeView: UIViewController, TabBarProtocol {
-    var titleTabBar: String = StringConstants.homeTitleBar
-    var iconTabBar: UIImage = UIConstants.homeIconTabBar
+    var titleTabBar: String = TabBarString.homeTitleBar.localized
+    var iconTabBar: UIImage = UIImage(systemName: UIConstants.homeIconTabBarString)!
     
     override func viewDidLoad() {
         title = titleTabBar

@@ -7,8 +7,8 @@
 import UIKit
 
 class CartView: UIViewController, TabBarProtocol {
-    var titleTabBar: String = StringConstants.cartTitleBar
-    var iconTabBar: UIImage = UIConstants.cartIconTabBar
+    var titleTabBar: String = TabBarString.cartTitleBar.localized
+    var iconTabBar: UIImage = UIImage(systemName: UIConstants.cartIconTabBarString)!
     
     override func viewDidLoad() {
         title = titleTabBar
